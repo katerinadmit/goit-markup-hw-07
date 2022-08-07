@@ -59,13 +59,13 @@
     padding-bottom: 32px;
     display: block;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.nav__link:hover,
-.nav__link:focus {
+
+&:hover,
+&:focus {
     color: var(--accent-txt-cl);
 }
-
+}
 .nav__link--current {
     position: relative;
     color: var(--accent-txt-cl);
@@ -116,14 +116,14 @@
     letter-spacing: 0.02em;
     color: #757575;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.contact__link:hover,
-.contact__link:focus {
+
+&:hover,
+&:focus {
     color: #2196F3;
 
 }
-
+}
 .contact__icon {
     fill: currentColor;
 }
@@ -139,10 +139,11 @@
     letter-spacing: 0.02em;
     margin-left: 30px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.contact__item:hover,
-.contact__item:focus {
+
+&:hover,
+&:focus {
     fill: #2196F3;
     ;
+}
 }

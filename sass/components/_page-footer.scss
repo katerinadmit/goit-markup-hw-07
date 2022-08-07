@@ -36,15 +36,15 @@
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
     color: #ffffff;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
-}
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-.footer__link:hover,
-.footer__link:focus {
+
+&:hover,
+&:focus {
     color: var(--accent-txt-cl);
 }
 
-
+}
 .footer__link-current {
     color: var(--accent-txt-cl);
 }
@@ -57,14 +57,14 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
-}
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+&
 
-.footer__contact:hover,
-.footer__contact:focus {
+&:hover,
+&:focus {
     color: var(--accent-txt-cl);
 }
-
+}
 .footer__item:not(:last-child) {
     margin-bottom: 9px;
 }
@@ -84,18 +84,27 @@
     color: #FFFFFF;
     background-color: rgba(255, 255, 255, 0.1);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+        color: #FFFFFF;
+        background-color: #2196F3;
+            }
 }
+
+
+
 
 .subscribe__icon {
     fill: #FFFFFF;
 }
 
-.subscribe__link:hover,
-.subscribe__link:focus {
-    color: #FFFFFF;
-    background-color: #2196F3;
-}
+// .subscribe__link:hover,
+// .subscribe__link:focus {
+//     color: #FFFFFF;
+//     background-color: #2196F3;
+// }
 
 .subscription {
     display: flex;
@@ -142,12 +151,17 @@
     border-radius: 4px;
     color: #ffffff;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+    border-color: #2196f3;
+        }
 }
 
-.subscription__input:hover,
-.subscription__input:focus {
-    border-color: #2196f3;
-}
+// .subscription__input:hover,
+// .subscription__input:focus {
+//     border-color: #2196f3;
+// }
 
 .footer-subscript::placeholder {
     font-family: var(--main-font-family);
@@ -183,12 +197,18 @@
     justify-content: center;
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    &:hover,
+        &:focus {
+            background-color: #2485d4
+        }
 }
 
-.subscription__btn:hover,
-.subscription__btn:focus {
-    background-color: #2485d4
-}
+// .subscription__btn:hover,
+// .subscription__btn:focus {
+//     background-color: #2485d4
+// }
 
 
 .subscription__icon {
@@ -260,12 +280,18 @@
     margin-left: 10px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+
+
+    &:hover,
+    &:focus {
+    background-color: var(--accent-txt-cl);
+        }
 }
 
-.subscribe__item:hover,
-.subscribe__item:focus {
-    background-color: var(--accent-txt-cl);
-}
+// .subscribe__item:hover,
+// .subscribe__item:focus {
+//     background-color: var(--accent-txt-cl);
+// }
 
 .subscribe__item:first-child {
     margin-left: 0;
