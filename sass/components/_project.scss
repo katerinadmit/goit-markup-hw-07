@@ -78,7 +78,7 @@
 }
 
 
-.project__item:hover .project__example-text {
+&:hover .project__example-text {
     transform: translateY(0);
 }
 .project__foto {
